@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚖️ ProBono AI | Tenant Rights Defender</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="project4.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+
+        <header>
+
+            <div class="logo">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <div>
+
+                <h2>ProBono AI</h2>
+
+                <p>Powered by Verified Tenant Laws</p>
+
+            </div>
+
+            <button id="theme-toggle" title="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </header>
+
+        <!-- Suggestions -->
+
+        <div class="suggestions">
+
+            <button class="suggestion">
+                Can my landlord evict me without notice?
+            </button>
+
+            <button class="suggestion">
+                Can rent be increased anytime?
+            </button>
+
+            <button class="suggestion">
+                What if my landlord won't fix repairs?
+            </button>
+
+        </div>
+
+        <!-- Chat -->
+
+        <div id="chat-history" class="chat-history">
+
+            <div class="message-row ai">
+
+                <div class="avatar ai-avatar">
+                    ⚖️
+                </div>
+
+                <div class="message-group">
+
+                    <div class="message ai-message">
+
+                        Hello 👋
+
+                        <br><br>
+
+                        I'm <strong>ProBono AI</strong>, your legal assistant.
+
+                        <br><br>
+
+                        Describe your housing issue and I'll check verified tenant rights laws to explain your legal
+                        options.
+
+                    </div>
+
+                    <div class="time">
+                        Just now
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Typing Indicator -->
+
+        <div id="typing-indicator" class="typing-container hidden">
+
+            <div class="avatar ai-avatar">
+                ⚖️
+            </div>
+
+            <div class="typing">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+        </div>
+
+        <!-- Input -->
+
+        <div class="input-area">
+
+            <textarea id="user-input" rows="1" placeholder="Describe your legal issue..."></textarea>
+
+            <button id="send-btn">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
